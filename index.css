@@ -77,4 +77,15 @@ footer{
   margin: 20px;
   background-image: url(Images/Stockholm.jpg);
   background-size: cover;
+  display: inline-block;
+}
+
+p{
+  color: black;
+  font-family: 'Quando', serif;
+  padding: 5px;
+}
+
+span{
+  color: black;
 }
