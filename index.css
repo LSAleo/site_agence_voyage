@@ -21,54 +21,125 @@ body{
 
 /* Navbar */
 .navbar {
-    background-color: #bf9759;
-    width: 100%;
-    height: 100%;
-    padding: 5%;
-    color: #fff; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 5vw; 
-  }
-  
-  /*Logo */
-  #logo1 {
-    width: 100px; 
-    height: auto; 
-  }
-  
-  /*Navmenu */
-  .navmenu {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex;
-  }
-  
-  /*menu */
-  .menu {
-    margin-left: 20px;
-    margin-right: 30px;
-  }
-  
-  .menu a {
-    text-decoration: none; 
-    color: #fff; /
-  }
-  
-  .menu a:hover {
-    text-decoration: underline;
-  }
-
-
-footer{
-    background-color: #FFE347;
-    width: 100%;
-    height: 150px;
+  background-color: #BF9759;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 10%;
+}
+#Titresnav {
+  font-size: 24px;
+  margin-left: 20px;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menuligne {
+  margin-right: 20px;
+}
+#Mot {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Quando', serif;
+}
+#Mot:hover {
+  text-decoration: none;
+  color:black;
+}
+.menunav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#ico {
+  font-size: 24px;
+  margin-left: 20px;
+}
+#ico:hover {
+  color: #232E21;
 }
 
-/* Carte */
+/* Style pour la barre de recherche */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.search-bar button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: ;
+}
+
+ 
+/*   ****************************FOOTER**************            */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-menu ul,
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-menu li,
+.footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a,
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-menu a:hover,
+.footer-social a:hover {
+  text-decoration: none;
+  color:red;
+}
 
 .card{
   border-color: #232E21;
