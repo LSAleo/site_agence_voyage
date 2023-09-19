@@ -1,14 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quando&display=swap');
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Quando', serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    font-size:large;
+    color: white;
+}
+
 body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     background-color: #E3D9D7;
 }
 
 .Header{
     background-color: blue;
+    height: 150px;
 }
 
 .Footer{
     background-color: blueviolet;
+    height:150px;
 }
