@@ -19,12 +19,10 @@ body{
     background-color: #E3D9D7;
 }
 
-.Header{
-    background-color: blue;
-    height: 150px;
+header{
+    background-color: #FFE347;
 }
 
-.Footer{
-    background-color: blueviolet;
-    height:150px;
+footer{
+    background-color: #FFE347;
 }
