@@ -19,13 +19,47 @@ body{
     background-color: #E3D9D7;
 }
 
-header{
+/* Navbar */
+.navbar {
     background-color: #bf9759;
     width: 100%;
     height: 100%;
     padding: 5%;
+    color: #fff; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+  }
+  
+  /*Logo */
+  #logo1 {
+    width: 100px; 
+    height: auto; 
+  }
+  
+  /*Navmenu */
+  .navmenu {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+  }
+  
+  /*menu */
+  .menu {
+    margin-left: 20px; 
+  }
+  
+  .menu a {
+    text-decoration: none; 
+    color: #fff; /
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
 
-}
 
 footer{
     background-color: #FFE347;
