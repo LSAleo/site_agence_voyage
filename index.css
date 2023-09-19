@@ -20,7 +20,6 @@ body{
 }
 
 /* Navbar */
-
 .navbar {
   background-color: #BF9759;
   color: #fff;
@@ -97,7 +96,6 @@ body{
 .search-bar button:hover {
   background-color: ;
 }
-/* Navbar */
 
  
 /*   ****************************FOOTER**************            */
@@ -143,19 +141,22 @@ body{
   color:red;
 }
 
-
-
-
-
-
-
-
-
 .card{
   border-color: #232E21;
   width: 400px;
   height: 300px;
   margin: 20px;
-  background-image: url(../Images/Stockholm.jpg);
+  background-image: url(Images/Stockholm.jpg);
   background-size: cover;
+  display: inline-block;
+}
+
+p{
+  color: black;
+  font-family: 'Quando', serif;
+  padding: 5px;
+}
+
+span{
+  color: black;
 }
