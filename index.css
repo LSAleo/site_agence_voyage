@@ -75,6 +75,6 @@ footer{
   width: 400px;
   height: 300px;
   margin: 20px;
-  background-image: url(../Images/Stockholm.jpg);
+  background-image: url(Images/Stockholm.jpg);
   background-size: cover;
 }
