@@ -68,3 +68,13 @@ footer{
     height: 150px;
 }
 
+/* Carte */
+
+.card{
+  border-color: #232E21;
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  background-image: url(../Images/Stockholm.jpg);
+  background-size: cover;
+}
