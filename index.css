@@ -4,7 +4,8 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Quando', serif; 
 */
-*/{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,13 +19,16 @@ body {
   box-sizing: border-box;
   font-size: 10px;
 }
+
+/*   ****************************NAVBAR*********************** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 10%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +93,16 @@ section.accueil{
 
 /* ****************************Bar de recherche*********************** */
 
+
+
+
+
+
+
+
+
+
+
 /* ****************************Bar de recherche*********************** */ 
 
 /* ****************************Cards*********************** */
@@ -113,6 +127,20 @@ section.accueil{
 
 /* ****************************Fin Cards*********************** */
 
+/* ****************************Bar de recherche*********************** */
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************Bar de recherche*********************** */
+
 /* ****************************FOOTER*********************** */
 
 .footer {
@@ -130,23 +158,3 @@ section.accueil{
   gap: 0.2rem;
 }
 /* ****************************FIN FOOTER*********************** */
-=======
-.card{
-  border-color: #232E21;
-  width: 400px;
-  height: 300px;
-  margin: 20px;
-  background-image: url(Images/Stockholm.jpg);
-  background-size: cover;
-  display: inline-block;
-}
-
-p{
-  color: black;
-  font-family: 'Quando', serif;
-  padding: 5px;
-}
-
-span{
-  color: black;
-}
