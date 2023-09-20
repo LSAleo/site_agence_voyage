@@ -78,30 +78,73 @@ section.accueil{
   background-position: center;
   position:relative;
 }
-#titre1{
+#titre1 {
   font-family: Quando;
   font-size: 60px;
-  color:white;
+  color: white;
   position: absolute;
-  margin-top: 85vh;
-  margin-left: 16vw;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
+  padding: 2%;
 }
-
 
 /* ****************************Fin Accueil*********************** */
 
 /* ****************************Bar de recherche*********************** */
 
+.barre-recherche {
+  position: absolute;
+  top: calc(100% - 400px); /* Position à 250px au-dessus du bas de la section */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1000px; /* Largeur maximale de la barre de recherche */
+  background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent */
+  border-radius: 5px;
+  padding: 10px;
+}
 
+/* Style pour le champ de recherche */
+.barre-recherche input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
 
+/* Style pour le bouton de recherche */
+.barre-recherche button {
+  background-color: #BF9759;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
+/* Centrer le bouton de recherche */
+.barre-recherche button {
+  display: block;
+  margin: 0 auto;
+}
 
-
-
-
-
-
+/* Ajuster la position du titre */
+#titre1 {
+  font-family: Quando;
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2%;
+}
 
 /* ****************************Bar de recherche*********************** */ 
 
@@ -124,6 +167,51 @@ section.accueil{
   font-family: 'Montserrat', sans-serif;
 }
 
+.carte_destination{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.carte_destination:hover{
+  transform: scale(1.03);
+}
+
+.carte_destination img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carte_destination h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.carte_destination p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.carte_destination a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carte_destination a:hover {
+  background-color: skyblue;
+}
 
 /* ****************************Fin Cards*********************** */
 
