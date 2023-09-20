@@ -91,7 +91,7 @@ section.accueil{
 
 /* ****************************Fin Accueil*********************** */
 
-/* ****************************Bar de recherche*********************** */
+/* ****************************Barre de recherche*********************** */
 
 .barre-recherche {
   position: absolute;
@@ -219,61 +219,53 @@ section.accueil{
 
 
 /* ****************************FOOTER*********************** */
+
+
 footer {
-    padding: 320px 0;
-    bottom:0;
-    width: 100%;
-    position:relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-    background:#2A2C2B;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
+  background-color: #2A2C2B;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+  font-size: 18px;
+}
+.footer-colonne {
+  flex: 1;
+  padding: 0 20px;
 }
 
-footer.info{
-  
-}
-
-footer a:hover {
-	
+.footer-colonne h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 
-footer ul li {
-	display: inline;
-	padding-right: 25px;
-	font-weight: 500;
+.footer-colonne ul {
+  list-style: none;
+  padding: 0;
 }
 
-footer p {
-	color: #888888;
-	font-size: 0.8em;
-	margin: 0;
+
+.footer-colonne ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-footer h2 {
-	text-transform: uppercase;
-	color: #FFFFFF;
-	margin-top: 0;
-	font-size: 2rem;
-	font-weight: 700;
-	width: 130px;
+
+.footer-colonne ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
-footer h2:after {
-	display: none;
+
+.footer-colonne ul li a:hover {
+  color: #BF9759;
 }
-footer hr {
-	border-top: 3px solid #ffffff;
-	margin: 20px 0 20px 0;
-}
+
+
 
 
 
