@@ -166,7 +166,7 @@ section.accueil{
   background-color: #fff;
   transition: transform 0.3s ease;
   width: 600px; /* Largeur fixe pour les cartes */
-  height: 600px; /* Hauteur fixe pour les cartes */
+  height: 550px; /* Hauteur fixe pour les cartes */
 }
 
 .carte_destination:hover{
@@ -219,6 +219,58 @@ section.accueil{
 
 
 /* ****************************FOOTER*********************** */
+footer {
+	background: #2A2C2B;
+	padding: 120px 0;
+    bottom:0;
+    width: 100%;
+}
+
+footer a {
+	color: #FFFFFF;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+footer a:hover {
+	color:wheat;
+}
+footer a {
+	text-decoration: none;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+	
+}
+footer ul li {
+	display: inline;
+	padding-right: 25px;
+	font-weight: 500;
+}
+
+
+footer p {
+	color: #888888;
+	font-size: 0.8em;
+	margin: 0;
+}
+footer h2 {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	width: 130px;
+}
+footer h2:after {
+	display: none;
+}
+footer hr {
+	border-top: 3px solid #ffffff;
+	margin: 20px 0 20px 0;
+}
 
 
 
