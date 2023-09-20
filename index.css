@@ -132,6 +132,11 @@ section.accueil{
   margin-top: 15px;
 }
 
+.barre-recherche button:hover{
+  background-color: #FDD743;
+  color:black;
+}
+
 /* ****************************Bar de recherche*********************** */ 
 
 /* ****************************Cards*********************** */
@@ -143,6 +148,7 @@ section.accueil{
   background-position: center;
   color: black;
   display: flex;
+  padding: 2.5%;
 }
 
   #titre2{
@@ -161,12 +167,13 @@ section.accueil{
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 40px;
-  padding: 25px;
+  padding: 10px;
+  padding-bottom: 85px; /*Modifier espace bas de cards*/
   text-align: center;
   background-color: #fff;
   transition: transform 0.3s ease;
   width: 600px; /* Largeur fixe pour les cartes */
-  height: 550px; /* Hauteur fixe pour les cartes */
+  min-height: auto; /* Hauteur fixe pour les cartes */
 }
 
 .carte_destination:hover{
@@ -175,7 +182,7 @@ section.accueil{
 
 .carte_destination img {
   width: 100%;
-  max-height: 200px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -183,25 +190,29 @@ section.accueil{
 .carte_destination h2 {
   font-size: 24px;
   margin: 10px 0;
+  border-image-slice: fill 10%  
 }
 
 .carte_destination p {
   font-size: 16px;
-  margin: 10px 0;
+  border-image-slice: fill 10%;
+  margin: 16px 0;
 }
 
 .carte_destination a {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: skyblue;
+  padding: 15px 30px;
+  background-color: #333;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  font-size: 15px;
 }
 
 .carte_destination a:hover {
-  background-color: skyblue;
+  background-color: #F2D743;
+  color: black;
 }
 
 .img_card{
@@ -229,7 +240,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 5%;
-  font-size: 18px;
+  font-size: 15px;
 }
 .footer-colonne {
   flex: 1;
@@ -239,20 +250,18 @@ footer {
 .footer-colonne h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  color:skyblue;
 }
-
 
 .footer-colonne ul {
   list-style: none;
   padding: 0;
 }
 
-
 .footer-colonne ul li {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  padding: 1.5%;
 }
-
 
 .footer-colonne ul li a {
   text-decoration: none;
@@ -262,13 +271,8 @@ footer {
 
 
 .footer-colonne ul li a:hover {
-  color: #BF9759;
+  color: skyblue;
 }
-
-
-
-
-
 
 
 /* ****************************FIN FOOTER*********************** */
