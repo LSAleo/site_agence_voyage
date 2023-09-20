@@ -18,6 +18,7 @@ body {
   background-position: center;
   box-sizing: border-box;
   font-size: 10px;
+  background-color: #E3D9D7;
 }
 
 /*   ****************************NAVBAR*********************** */
@@ -85,6 +86,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); /* Centre la div verticalement et horizontalement */
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 /* Style pour le h1 */
@@ -111,7 +113,10 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 30px;
     text-align: center;
     background-color: #fff;
@@ -158,8 +163,12 @@ body {
   .nom_ville{
     font-family: 'Poppins', sans-serif;
   }
+
+  .destination{
+    background-color: #E3D9D7;
+  }
   
-  /* ****************************Fin Cards*********************** */
+/* ****************************Fin Cards*********************** */
 
 
 /* ****************************FOOTER*********************** */
