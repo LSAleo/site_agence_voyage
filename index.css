@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* 
 font-family: 'Montserrat', sans-serif;
-font-family: 'Quando', serif; 
+font-family: 'Poppins', sans-serif;
 */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
 }
 
 /*   ****************************NAVBAR*********************** */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 .header {
   position: fixed;
@@ -79,7 +78,7 @@ section.accueil{
   position:relative;
 }
 #titre1 {
-  font-family: Quando;
+  font-family: 'Poppins', sans-serif;
   font-size: 60px;
   color: white;
   position: absolute;
@@ -87,7 +86,6 @@ section.accueil{
   left: 50%; 
   transform: translateX(-50%);
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   padding: 2%;
 }
 
@@ -97,7 +95,7 @@ section.accueil{
 
 .barre-recherche {
   position: absolute;
-  top: calc(100% - 400px); /* Definir hauteur section */
+  top: calc(100% - 450px); /* Definir hauteur section */
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
@@ -131,20 +129,7 @@ section.accueil{
 .barre-recherche button {
   display: flex;
   margin: auto;
-  justify-content: space-between;
-}
-
-#titre1 {
-  font-family: Quando;
-  font-size: 60px;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  padding: 2%;
+  margin-top: 15px;
 }
 
 /* ****************************Bar de recherche*********************** */ 
@@ -161,7 +146,6 @@ section.accueil{
 }
 
   #titre2{
-  font-family: Quando;
   font-size: 60px;
   background-color: #E3D9D7;
   color: black;
@@ -169,15 +153,15 @@ section.accueil{
   display: flex;
   justify-content: center;
   padding: 3%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .carte_destination{
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 30px;
-  padding: 20px;
+  margin: 40px;
+  padding: 25px;
   text-align: center;
   background-color: #fff;
   transition: transform 0.3s ease;
@@ -227,23 +211,17 @@ section.accueil{
   border-radius: 10px;
 }
 
+.nom_ville{
+  font-family: 'Poppins', sans-serif;
+}
+
 /* ****************************Fin Cards*********************** */
 
-/* ****************************Bar de recherche*********************** */
-
-
-
-
-
-
-
-
-
-
-
-/* ****************************Bar de recherche*********************** */
 
 /* ****************************FOOTER*********************** */
+
+
+
 
 .footer {
   position:relative;
