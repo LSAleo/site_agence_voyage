@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* 
 font-family: 'Montserrat', sans-serif;
-font-family: 'Quando', serif; 
+font-family: 'Poppins', sans-serif;
 */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
 }
 
 /*   ****************************NAVBAR*********************** */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 .header {
   position: fixed;
@@ -78,30 +77,65 @@ section.accueil{
   background-position: center;
   position:relative;
 }
-#titre1{
-  font-family: Quando;
+#titre1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 60px;
-  color:white;
+  color: white;
   position: absolute;
-  margin-top: 85vh;
-  margin-left: 16vw;
-  font-family: 'Montserrat', sans-serif;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 2%;
 }
-
 
 /* ****************************Fin Accueil*********************** */
 
-/* ****************************Bar de recherche*********************** */
+/* ****************************Barre de recherche*********************** */
+
+.barre-recherche {
+  position: absolute;
+  top: calc(100% - 450px); /* Definir hauteur section */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.2); /* Arrière-plan semi-transparent */
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.barre-recherche input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
 
 
+.barre-recherche button {
+  background-color: #BF9759;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
 
 
+.barre-recherche button {
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+}
 
-
-
-
-
-
+.barre-recherche button:hover{
+  background-color: #FDD743;
+  color:black;
+}
 
 /* ****************************Bar de recherche*********************** */ 
 
@@ -109,52 +143,136 @@ section.accueil{
 
 .card{
   background-color:#E3D9D7;
-  min-height: 100vh;  
+  min-height: auto;  
   background-size: cover;
   background-position: center;
   color: black;
+  display: flex;
+  padding: 2.5%;
 }
 
   #titre2{
-  font-family: Quando;
   font-size: 60px;
+  background-color: #E3D9D7;
+  color: black;
+  background-position: center;
   display: flex;
   justify-content: center;
   padding: 3%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+.carte_destination{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 40px;
+  padding: 10px;
+  padding-bottom: 85px; /*Modifier espace bas de cards*/
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  width: 600px; /* Largeur fixe pour les cartes */
+  min-height: auto; /* Hauteur fixe pour les cartes */
+}
+
+.carte_destination:hover{
+  transform: scale(1.03);
+}
+
+.carte_destination img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carte_destination h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  border-image-slice: fill 10%  
+}
+
+.carte_destination p {
+  font-size: 16px;
+  border-image-slice: fill 10%;
+  margin: 16px 0;
+}
+
+.carte_destination a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+}
+
+.carte_destination a:hover {
+  background-color: #F2D743;
+  color: black;
+}
+
+.img_card{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nom_ville{
+  font-family: 'Poppins', sans-serif;
+}
 
 /* ****************************Fin Cards*********************** */
 
-/* ****************************Bar de recherche*********************** */
-
-
-
-
-
-
-
-
-
-
-
-/* ****************************Bar de recherche*********************** */
 
 /* ****************************FOOTER*********************** */
 
-.footer {
-  position:relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background:black;
-  color: white;
-  font-weight: 500;
+
+footer {
+  background-color: #2A2C2B;
+  color: #fff;
+  padding: 40px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+  font-size: 15px;
 }
+.footer-colonne {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-colonne h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:skyblue;
+}
+
+.footer-colonne ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-colonne ul li {
+  font-size: 15px;
+  padding: 1.5%;
+}
+
+.footer-colonne ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+
+.footer-colonne ul li a:hover {
+  color: skyblue;
+}
+
+
 /* ****************************FIN FOOTER*********************** */

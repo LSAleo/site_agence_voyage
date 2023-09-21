@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;  
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: #E3D9D7;
+}
+
+/*   ****************************NAVBAR*********************** */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BF9759;
+  z-index: 1;
+}
+
+.header >img{
+  width :100px;
+  height: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo:hover {
+ color: skyblue;
+}
+
+.menu {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-left: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.menu:hover {
+  color: skyblue;
+}
+/*   ****************************FIN NAVBAR*********************** */
+
+
+/* Appliquer une image en fond d'écran */
+.accueil {
+    background: url(Images/jolie_plage.jpg) no-repeat;
+    background-size: cover; /* Redimensionne l'image pour remplir complètement la section */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    min-height: 100vh;
+}
+
+/* Centrer le contenu à l'intérieur de la div .gros_titre */
+.gros_titre {
+    text-align: center; /* Centre le texte horizontalement */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre la div verticalement et horizontalement */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Style pour le h1 */
+#titre1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+#titre2{
+    font-size: 60px;
+    background-color: #E3D9D7;
+    color: black;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* ****************************** DEBUT FILTRAGE *************************** */
+
+.div_filtre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.filtre{
+  font-size: 15px;
+}
+
+.div_de_merde {
+  margin-right: 10%; /* Espacement entre les div div_de_merde */
+}
+
+select {
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #BF9759; /* Couleur de fond */
+  padding: 5px; /* Espacement interne */
+  margin-right: 10%; /* Espacement entre les selects */
+}
+
+
+/* ****************************** FIN FILTRAGE *************************** */
+
+/* ****************************Cards*********************** */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .loc{
+    display: flex;
+    padding-bottom: 1%;
+    font-size: 12px;
+  }
+
+  .loc i{
+    padding-right: 5px;
+  }
+
+  .loc h3{
+    text-decoration: underline;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .periode{
+    font-size: 13px;
+    text-decoration: underline;
+    color: #F2D743;
+  }
+  
+  .savoir {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+  }
+
+  .prix{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #87CEEB;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .card a:hover {
+    background-color: #F2D743;
+    color: black;
+  }
+
+  .nom_ville{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .destination{
+    background-color: #E3D9D7;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+/* ****************************Fin Cards*********************** */
+
+
+/* ****************************FOOTER*********************** */
+
+
+footer {
+  background-color: #2A2C2B;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+  font-size: 15px;
+}
+.footer-colonne {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-colonne h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-colonne ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-colonne ul li {
+  font-size: 15px;
+  padding: 1.5%;
+}
+
+.footer-colonne ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+
+.footer-colonne ul li a:hover {
+  color: #BF9759;
+}
+
+  
+  /* ****************************FIN FOOTER*********************** */
