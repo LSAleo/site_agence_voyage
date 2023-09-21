@@ -252,3 +252,83 @@ footer {
 
   
   /* ****************************FIN FOOTER*********************** */
+
+  /* ****************************DEBUT RESPONSIVE*********************** */
+
+#menu_burger{
+  display: none;
+}
+
+
+
+@media (max-width: 480px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .header{
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  section.accueil{
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .menu {
+    display: none; /* Cacher la classe .menu */
+  }
+
+  #menu_burger {
+    display: block; /* Afficher l'id #menu_burger */
+    font-size: 200%;
+  }
+  /* Réduire la taille du texte du titre1 */
+  #titre1 {
+    font-size: 40px;
+  }
+  
+  /* Modifier la position de la barre de recherche */
+  .barre-recherche {
+    top: 20%; /* Ajuster la position verticale */
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  /* Réduire la taille du texte du titre2 */
+  #titre2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  /* Adapter la largeur des cartes à la largeur de l'écran */
+  .card {
+    width: 90%; /* Utiliser une largeur de 90% pour s'adapter à l'écran */
+    margin: 20px auto; /* Centrer les cartes */
+    max-width: 400px; /* Limiter la largeur maximale des cartes */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Réduire la taille du texte des cartes */
+  .card h2 {
+    font-size: 18px;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+}
