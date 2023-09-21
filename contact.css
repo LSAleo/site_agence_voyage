@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%; 
+  display: grid;
+  align-items: center;
+}
+
+/*   ****************************NAVBAR*********************** */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BF9759;
+  z-index: 1;
+}
+
+.header >img{
+  width :100px;
+  height: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo:hover {
+ color: skyblue;
+}
+
+.menu {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-left: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.menu:hover {
+  color: skyblue;
+}
+/* ******************************FIN NAVBAR*********************** */
+/* ****************************Contact*********************** */
+.all{
+  padding: 15%;
+  background: url(./Images/bordeau.jpg);
+  background-size: cover;
+}
+
+.contact-in{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: 0px 0px 210px 0px #666;
+  justify-content: space-between;
+  background-color: #e5e7e6;
+}
+
+.contact-map{
+  width: 100%;
+  height: auto;
+  flex:50%;
+}
+
+.contact-map > iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form{
+  width:100%;
+  height:100% ;
+  flex:50%;
+  text-align: center;
+}
+
+.contact-form > h1{
+padding: 2%;
+font-family: 'Poppins', sans-serif;;
+font-weight: 500;
+font-size: 28px;
+}
+
+.contact-form-txt{
+  width: 95%;
+  height: 40px;
+  color:#000;
+  border:0.2px solid;
+  border-radius:5px;
+  outline: none;
+  margin-bottom: 20px;
+  padding:15px;
+}
+  .contatc-form-txt::placeholder{
+    color:#aaa;
+
+  }
+.contact-form-textarea{
+  width: 95%;
+  height: 140px;
+  color:#000;
+  border:0.5px solide #bbc;
+  border-radius:5px;
+  outline: none;
+  margin-bottom: 20px;
+  padding:15px;
+}
+.contact-form-btn {
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour un effet de survol en douceur */
+  background-color: #BF9759;
+}
+
+.contact-form-btn:hover {
+  background-color: skyblue; /* Couleur de fond au survol */
+  color: black; /* Couleur du texte au survol */
+  cursor: pointer; /* Curseur de type main au survol */
+}
+
+
+
+
+
+  /*   ****************************fIN Contact*********************** */
+  /**********************************************Contact Icones*************************************************/
+
+  .contact-icons {
+    text-align: center;
+  }
+
+  .contact-icons ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Add some space between the form and icons */
+  }
+
+  .contact-icons ul li {
+    display: inline;
+    margin-right: 1px; /* Add spacing between icon links */
+  }
+
+  .contact-icons ul li a {
+    text-decoration: none;
+    color: #bf9759;
+    transition: color 0.3s ease;
+    font-size: 25px;
+  }
+
+  .contact-icons ul li a:hover {
+    color: skyblue;
+  }
+
+
+  /**********************************************Fin Contact Icones*************************************************/
+
+
+/*   ****************************FOOTER*********************/
+footer {
+    background-color: #2A2C2B;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5%;
+    font-size: 15px;
+  }
+  .footer-colonne {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-colonne h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:skyblue;
+  }
+  
+  .footer-colonne ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-colonne ul li {
+    font-size: 15px;
+    padding: 1.5%;
+  }
+  
+  .footer-colonne ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .footer-colonne ul li a:hover {
+    color: skyblue;
+  }
+  /* ****************************FIN FOOTER*********************** */
+
+
+
+
+/* Styles spécifiques pour les écrans de téléphone (480x1000 pixels) */
+@media (max-width: 480px) /*and (max-height: 1000px)*/ {
+  /* Header (Navigation Bar) */
+  .header {
+    padding: 1rem 5%; /* Réduisez l'espace sur les côtés */
+  }
+
+  .header > img {
+    width: 80px; /* Réduisez la taille du logo */
+  }
+
+  .menu {
+    font-size: 0.9rem; /* Réduisez la taille de police du menu */
+    margin-left: 1rem; /* Réduisez la marge entre les éléments du menu */
+  }
+
+  /* Contact Section */
+  .all {
+    padding: 5%;
+    margin-top: 10vh; /* Réduisez la marge intérieure */
+  }
+
+  .contact-in {
+    width: 90%; /* Réduisez la largeur du contenu */
+    padding: 5px; /* Réduisez l'espacement interne */
+  }
+
+  .contact-map,
+  .contact-form {
+    flex: 100%; /* Utilisez la largeur complète */
+  }
+
+  .contact-form > h1 {
+    font-size: 20px; /* Réduisez la taille de police du titre */
+  }
+
+  .contact-form-txt,
+  .contact-form-textarea {
+    width: 90%; /* Réduisez la largeur des champs de formulaire */
+  }
+
+  .contact-form-btn {
+    width: 40%; /* Réduisez la largeur du bouton */
+    font-size: 16px; /* Réduisez la taille de police du bouton */
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 0; /* Réduisez l'espacement dans le pied de page */
+    font-size: 14px; /* Réduisez la taille de police du pied de page */
+  }
+}
