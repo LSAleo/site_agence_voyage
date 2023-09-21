@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;  
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: #E3D9D7;
+  overflow-x: hidden;
+}
+
+/*   ****************************NAVBAR*********************** */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BF9759;
+  z-index: 1;
+}
+
+.header >img{
+  width :100px;
+  height: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo:hover {
+ color: skyblue;
+}
+
+.menu {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-left: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.menu:hover {
+  color: skyblue;
+}
+/*   ****************************FIN NAVBAR*********************** */
+
+
+/*   ****************************DIAGRAMME*********************** */
+
+/* Style pour le conteneur des cartes */
+.diagramme {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  background: url(./Images/yo.jpg); 
+}
+
+
+.carte {
+  flex-grow: 2;/* Augmenter flex-grow pour agrandir carte */
+  padding: 70px;
+  margin-bottom: 2%; /*marge du bas*/
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-color: #2A2C2B;
+  width: auto;
+  height:auto;
+  margin-top:14%;
+}
+
+
+.graphique {
+  width: 100%;
+  height: 100% ;
+}
+/* ****************************FIN DIAGRAMME*********************** */
+
+
+
+
+
+
+
+
+
+/* ****************************FOOTER*********************** */
+
+
+footer {
+  background-color: #2A2C2B;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+  font-size: 15px;
+}
+.footer-colonne {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-colonne h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-colonne ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-colonne ul li {
+  font-size: 15px;
+  padding: 1.5%;
+}
+
+.footer-colonne ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+
+.footer-colonne ul li a:hover {
+  color: #BF9759;
+}
+
+  
+  /* ****************************FIN FOOTER*********************** */
+
+  /* ****************************DEBUT RESPONSIVE*********************** */
+
+#menu_burger{
+  display: none;
+}
+
+
+
+@media (max-width: 480px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .menu {
+    display: none; /* Cacher la classe .menu */
+  }
+
+  #menu_burger {
+    display: block; /* Afficher l'id #menu_burger */
+    font-size: 200%;
+  }
+
+}
