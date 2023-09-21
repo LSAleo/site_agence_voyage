@@ -236,7 +236,9 @@ footer {
   }
   /* ****************************FIN FOOTER*********************** */
 
-
+  #menu_burger{
+    display: none;
+  }
 
 
 /* Styles spécifiques pour les écrans de téléphone (480x1000 pixels) */
@@ -251,8 +253,12 @@ footer {
   }
 
   .menu {
-    font-size: 0.9rem; /* Réduisez la taille de police du menu */
-    margin-left: 1rem; /* Réduisez la marge entre les éléments du menu */
+    display: none; /* Cacher la classe .menu */
+  }
+
+  #menu_burger {
+    display: block; /* Afficher l'id #menu_burger */
+    font-size: 200%;
   }
 
   /* Contact Section */
