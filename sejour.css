@@ -107,6 +107,33 @@ body {
     font-family: 'Poppins', sans-serif;
   }
 
+/* ****************************** DEBUT FILTRAGE *************************** */
+
+.div_filtre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.filtre{
+  font-size: 15px;
+}
+
+.div_de_merde {
+  margin-right: 10%; /* Espacement entre les div div_de_merde */
+}
+
+select {
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #BF9759; /* Couleur de fond */
+  padding: 5px; /* Espacement interne */
+  margin-right: 10%; /* Espacement entre les selects */
+}
+
+
+/* ****************************** FIN FILTRAGE *************************** */
+
 /* ****************************Cards*********************** */
 
 .card {
