@@ -9,8 +9,9 @@
 <title>Agence de voyage</title>
 <!-- Header -->
 <header class="header">
-  <img src="Images/Logo1.png" href="index.html" alt="Photo du logo"/>
+  <img src="Images/Logo1.png" href="index.html" alt="Photo du logo" class="img_accueil"/>
     <nav class="navbar">
+      <i class="fa-solid fa-bars" id="menu_burger"></i>
       <a href="index.html" class="menu" style="--i: 1">Accueil</a>
       <a href="sejour.html" class="menu" style="--i: 2">Séjours</a>
       <a href="contact.html" class="menu" style="--i: 3">Contact</a>
@@ -18,55 +19,27 @@
 </header>
 <!-- Header Fin -->
 <body>
-
-
   
-<section class="contact">
-  <div class="form">  
-    <form id="contact" action="" method="post">
-      <h3>Formulaire de contact</h3>
-      <h4>Contactez-nous pour nous signaler un problème</h4>
-      <fieldset>
-        <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Votre prénom" type="text" tabindex="2" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Votre adresse mail" type="email" tabindex="4" required>
-      </fieldset>
-      <fieldset>
-        <textarea placeholder="Ecrivez votre message ici...." tabindex="5" required></textarea>
-      </fieldset>
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
-      </fieldset>
-      <div class="contact-icons">
-        <ul>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-      </div>
-    </form>
-  </div>
-  
-
-
-</section>
-<section class ="map"> 
-  <div class="map_div1">
-    <div class="map_div2">
-      <h4>Localiser notre agence sur Google Map</h4>
-      <div class="map_contour">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
+<section class="all">
+  <div class="contact-in">
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" 
+      width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="
+      "aria-hidden="false" tabindex="0"></iframe>
+    </div>
+      <div class="contact-form">
+        <h1>Contactez nous</h1>
+        <form>
+          <input type="text" placeholder="Nom" class="contact-form-txt">
+          <input type="text" placeholder="Prénom" class="contact-form-txt">  
+          <input type="text" placeholder="email" class="contact-form-txt">
+          <textarea placeholder="Messages ..."class="contact-form-textarea"></textarea>
+          <input type="submit" name="Envoyer" class="contact-form-btn">
+        </form>  
     </div>
   </div>
+</section >
 
-  
-</section>
 
 </body>
 <!-- Footer -->
