@@ -19,6 +19,7 @@ body {
   box-sizing: border-box;
   font-size: 10px;
   background-color: #E3D9D7;
+  overflow-x: hidden;
 }
 
 /*   ****************************NAVBAR*********************** */
@@ -76,18 +77,20 @@ body {
 .diagramme {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px;
-  margin-top: 7%;
   width: 100%;
   height: auto;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  background: url(./Images/yo.jpg); 
 }
 
 
 .carte {
-   flex-grow: 3;/* Augmenter flex-grow pour agrandir carte */
-  padding: 20px;
+  flex-grow: 2;/* Augmenter flex-grow pour agrandir carte */
+  padding: 70px;
   margin-bottom: 2%; /*marge du bas*/
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -95,24 +98,13 @@ body {
   border-color: #2A2C2B;
   width: auto;
   height:auto;
+  margin-top:14%;
 }
 
 
 .graphique {
   width: 100%;
   height: 100% ;
-}
-
-#donutchart{
-width: 100%;
-}
-
-#columnchart_values{
-  width: 100%;
-}
-
-#curve_chart{
-  width: 100%;
 }
 /* ****************************FIN DIAGRAMME*********************** */
 

@@ -36,7 +36,9 @@
 
         var options = {
           title: 'Tranche d\'âge de nos clients',
-          pieHole: 0.4,
+          pieHole: 0.3,
+          width: 700,
+          height: 400,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
@@ -80,7 +82,7 @@
   
         var options = {
           title: "Nombre de visiteurs par an pendant 10 ans",
-          width: 600,
+          width: 700,
           height: 400,
           bar: {groupWidth: "95%"},
           legend: { position: "none" },
@@ -120,6 +122,8 @@
     var options = {
       title: 'Chiffre d\'affaire de la compagnie sur les 10 dernières années',
       curveType: 'function',
+      width: 700,
+      height: 400,
       legend: { position: 'bottom' }
     };
 
@@ -146,7 +150,6 @@
       <div id="curve_chart" class="graphique"></div>
     </div>
   </div>
-
 
 </body>
 <!-- Footer -->
